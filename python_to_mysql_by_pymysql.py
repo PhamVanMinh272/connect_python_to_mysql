@@ -3,10 +3,10 @@
 # run: pip install pymysql
 import pymysql.cursors
 
-connection = pymysql.connect(host='localhost',
-                             user='root',
-                             password='root',
-                             db='demo',
+connection = pymysql.connect(host='localhost', # your host
+                             user='root', # your db username
+                             password='root', # your db password
+                             db='demo', # your db name
                              cursorclass=pymysql.cursors.DictCursor)
 
 cursor = connection.cursor()
